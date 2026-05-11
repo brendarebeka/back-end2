@@ -11,11 +11,10 @@ console.log(cardapio[0].nome);
 console.log(cardapio[1].preco);
 console.log(cardapio[2].categoria);
 
-const cliente {
+const  cliente [
     nome: "Ana",
     fidelidade: true
-
-};
+];
 
 function calcularComDesconto(total, clienteObj) {
     if (clienteObj.fidelidade === true) {
@@ -39,12 +38,15 @@ function calcularTotal (listaPedido) {
     return total;
 }
 
-function exibirPedido(listaPedido) {
+function exibirPedido(listaPedido, clienteObj) {
     console.log("=== SEU PEDIDO ===");
     console.log(`1. ${listaPedido[0].nome} - R$ ${listaPedido[0].preco}`);
-    console.log(`2. ${listaPedido[1].nome} - R$ ${listaPedido[0].preco}`);
+    console.log(`2. ${listaPedido[1].nome} - R$ ${listaPedido[1].preco}`);
     console.log(`TOTAL: R$ ${calcularTotal(listaPedido)}`);
-}
+
+let subtotal = calcularTotal(listaPedido)
+let totalFinal = calcularComDesconto(subtotal, clienteObj);
+console.log(`TOTAL FINAL : R${totalFinal}`)
 
  exibirCardapio(cardapio);
  exibirPedido(pedido);
