@@ -13,7 +13,7 @@ let precoFinal2 = preco - (preco * desconto2);
 let compras = 500;
 let final = compras - (compras * desconto2);
 
-let economia = desconto2 % compras
+let economia = (compras - final)
 
 console.log(`Venha conferir nosso incrível produto: ${produto}, que foi de ${preco} para ${precoFinal}! É a melhor ferramenta para sua ${categoria}.`)
 console.log(`${desconto} * ${preco} = ${precoFinal}`)
