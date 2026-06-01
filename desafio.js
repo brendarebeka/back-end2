@@ -15,7 +15,9 @@ let final = compras - (compras * desconto2);
 
 let economia = (compras - final)
 
+
 console.log(`Venha conferir nosso incrível produto: ${produto}, que foi de ${preco} para ${precoFinal}! É a melhor ferramenta para sua ${categoria}.`)
 console.log(`${desconto} * ${preco} = ${precoFinal}`)
 
 console.log(`A partir de R$500,00, você tem 20% de desconto! Ao final, você vai pagar: R$${final}, economizando R$${economia}`)
+console.log(`O troco para ${compras} é: ${economia}`)
