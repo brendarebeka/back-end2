@@ -8,3 +8,12 @@ const animal = {
 
 console.log(animal.nome)
 console.log(animal.tutor)
+
+const camisa = {
+    tamanho: 12,
+    tecido: "algodão",
+    desing: "listrado",
+    cor: "branco",
+    marca: false
+};
+console.log(camisa.cor)
